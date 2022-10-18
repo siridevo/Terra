@@ -1,0 +1,9 @@
+Specifies the name to attach to the role session. This value is provided to the RoleSessionName
+parameter when the AWS CLI calls the AssumeRole operation, and becomes part of the assumed
+role user ARN: arn:aws:sts::123456789012:assumed-role/role_name/role_session_name.
+This is an optional parameter. If you do not provide this value, a session name is generated
+automatically. This name appears in AWS CloudTrail logs for entries associated with this session.
+  
+Specifies the path to a file that contains an OAuth 2.0 access token or OpenID Connect ID token that
+is provided by an identity provider. The AWS CLI loads the contents of this file and passes it as the
+WebIdentityToken argument to the AssumeRoleWithWebIdentity operation.
